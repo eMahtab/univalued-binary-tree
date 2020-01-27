@@ -27,6 +27,7 @@ public boolean isUnivalTree(TreeNode root) {
 }
 ```
 **What if the root is null?**
+
 We can add the following statement as the first line in isUnivalTree(TreeNode)
 if (root == null) return true;
 In fact, the problem description states 
