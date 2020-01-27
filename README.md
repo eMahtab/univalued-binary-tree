@@ -11,7 +11,7 @@ Note:
 2. Each node's value will be an integer in the range [0, 99].
 
 
-## Implementation :
+## Implementation : BFS
 
 ```java
 public boolean isUnivalTree(TreeNode root) {
@@ -26,9 +26,24 @@ public boolean isUnivalTree(TreeNode root) {
         return true;
 }
 ```
+
+## Implementation : DFS
+
+```java
+public boolean isUnivalTree(TreeNode root) {
+        return dfs(root, root.val);
+}
+
+private boolean dfs(TreeNode n, int v) {
+        if (n == null) { return true; }
+        if (n.val != v) { return false; }
+        return dfs(n.left, v) && dfs(n.right, v);
+}    
+```
+
 **What if the root is null?**
 
-We can add the following statement as the first line in isUnivalTree(TreeNode)
+We can add the following statement as the first line in `isUnivalTree(TreeNode)`
 if (root == null) return true;
 In fact, the problem description states 
 "The number of nodes in the given tree will be in the range [1, 100].", which implies root != null.
