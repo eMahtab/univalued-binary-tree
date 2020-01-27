@@ -11,6 +11,7 @@ Note:
 2. Each node's value will be an integer in the range [0, 99].
 
 
+## Implementation :
 
 ```java
 public boolean isUnivalTree(TreeNode root) {
@@ -25,7 +26,12 @@ public boolean isUnivalTree(TreeNode root) {
         return true;
 }
 ```
+The above implementation have runtime complexity of O(n) and space complexity of O(n).
 
+```
+Runtime Complexity = O(n)
+Space Complexity   = O(n)
+```
 
 
 
