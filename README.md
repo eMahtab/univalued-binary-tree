@@ -25,3 +25,10 @@ public boolean isUnivalTree(TreeNode root) {
         return true;
 }
 ```
+
+
+
+
+
+# References :
+https://massivealgorithms.blogspot.com/2019/01/leetcode-965-univalued-binary-tree.html
