@@ -26,6 +26,13 @@ public boolean isUnivalTree(TreeNode root) {
         return true;
 }
 ```
+**What if the root is null?**
+We can add the following statement as the first line in isUnivalTree(TreeNode)
+if (root == null) return true;
+In fact, the problem description states 
+"The number of nodes in the given tree will be in the range [1, 100].", which implies root != null.
+
+
 The above implementation have runtime complexity of O(n) and space complexity of O(n).
 
 ```
